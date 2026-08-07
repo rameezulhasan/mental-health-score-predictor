@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+
+  backend:
+    image: rameez49/mental-health-backend:latest
+    container_name: mental-health-backend
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
+
+  frontend:
+    image: rameez49/mental-health-frontend:v2
+    container_name: mental-health-frontend
+
+    ports:
+      - "80:80"
+
+    depends_on:
+      - backend
+
+    restart: unless-stopped

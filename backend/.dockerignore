@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.git
+.gitignore
+
+.ipynb_checkpoints/
+mental_health_score_predictor.ipynb
+
+.env
